@@ -63,6 +63,7 @@ var beat = {
 		}
 	},
 	sync: function () {
+		console.log('yup');
 		beat.get();
 		var status = beat.storage[beat.settings.ident];
 		if (status == 1 && beat.first) {
