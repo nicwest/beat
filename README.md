@@ -50,4 +50,5 @@ and/or a ready function:
 Testing
 -------
 
-I still need to check this out in context, and I plan to give some more comprehensive examples.
+Testing in iBooks has yeilded a bug where by as the pages are loaded quickly to produce the preview thumbs, this also this inits the local storage before it's needed and doesn't complete propperly.
+At the moment I have used a `localStorage.clear();` on the cover page to reset this untill I can work around this bug.
