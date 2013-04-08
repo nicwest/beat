@@ -17,33 +17,33 @@ Usage
 -----
 
 add the beat.js to the header of your html file:
-<script src="../beat.js" type="text/javascript"></script>
+	<script src="../beat.js" type="text/javascript"></script>
 
 and intialise beat by adding this just before your closing body tag:
 
-<script type="text/javascript">
-	beat.init();
-</script>
+	<script type="text/javascript">
+		beat.init();
+	</script>
 
 It will also take settings:
 
-<script type="text/javascript">
-	beat.settings = {
-		ident: 'thebeat123', // variable used in relation to a specific pair of beat scripts, change if you have multiple pairs running on the same page.
-		loadClass: 'beat' // the class added by default to the body element of the page on beat executing.
-	};
-	beat.init();
-</script>
+	<script type="text/javascript">
+		beat.settings = {
+			ident: 'thebeat123', // variable used in relation to a specific pair of beat scripts, change if you have multiple pairs running on the same page.
+			loadClass: 'beat' // the class added by default to the body element of the page on beat executing.
+		};
+		beat.init();
+	</script>
 
 and/or a ready function:
 
-<script type="text/javascript">
-	beat.init();
-	beat.ready(function () {
-		var output = document.getElementById("output")
-		output.innerHTML = "READY!";
-	});
-</script> 
+	<script type="text/javascript">
+		beat.init();
+		beat.ready(function () {
+			var output = document.getElementById("output")
+			output.innerHTML = "READY!";
+		});
+	</script> 
 
 
 Testing
