@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Beat.js example</title>
+	</head>
+
+
+	<body>
+		<iframe src="page2.html" id="frame1"></iframe>
+		<iframe src="page2.html" id="frame2"></iframe>
+		
+
+		<script type="text/javascript">
+		window.onload = function () {
+			setTimeout(function() {
+				var c = document.getElementById('frame1');
+				c.src = "page.html";
+			}, 2000);
+			setTimeout(function() {
+				var c = document.getElementById('frame2');
+				c.src = "page.html";
+			}, 4000);
+		};
+		</script>
+	</body>
+</html>
