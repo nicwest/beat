@@ -17,6 +17,7 @@ Usage
 -----
 
 add the beat.js to the header of your html file:
+
 	<script src="../beat.js" type="text/javascript"></script>
 
 and intialise beat by adding this just before your closing body tag:
